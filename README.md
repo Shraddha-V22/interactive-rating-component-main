@@ -15,7 +15,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img width="956" alt="frontend-mentor-2" src="https://user-images.githubusercontent.com/97953020/211033067-734b2c5a-2075-4c08-a5c3-16ce9262a698.png">
+<img width="959" alt="frontend-mentor-2-2" src="https://user-images.githubusercontent.com/97953020/211033092-7d20a14a-82d2-4ac5-9b1f-787b8f56603a.png">
+
 
 ### Links
 
