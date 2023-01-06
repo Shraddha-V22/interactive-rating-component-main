@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --orange: 25, 97%, 53%;
+
+  /* secondary */
+  --white: 0, 0%, 100%;
+  --light-gray: 217, 12%, 63%;
+  --medium-gray: 216, 12%, 54%;
+  --dark-blue: 213, 19%, 18%;
+  --darkest-blue: 216, 12%, 8%;
+
+  /* typography */
+  --fs-para: 0.85rem;
+
+  --ff-overpass: "Overpass", sans-serif;
+
+  --gap: 15px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-overpass);
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(var(--darkest-blue));
+  color: hsl(var(--white));
+  display: grid;
+  place-items: center;
+}
+
+p {
+  color: hsl(var(--medium-gray));
+  font-size: var(--fs-para);
+}
+
+.cards {
+  width: 340px;
+  height: 350px;
+  background-color: hsl(var(--dark-blue));
+  background: linear-gradient(
+    180deg,
+    hsl(var(--dark-blue)),
+    hsla(var(--dark-blue), 50%)
+  );
+  padding: 30px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.star-img {
+  width: 2.8125em;
+  padding: 0.9em;
+  background-color: hsl(var(--medium-gray), 20%);
+  border-radius: 50%;
+}
+
+.inputs-radio > input[type="radio"] {
+  display: none;
+  font-family: inherit;
+}
+
+.inputs-radio > input[type="radio"]:checked + label {
+  background-color: hsl(var(--medium-gray));
+  color: hsl(var(--white));
+}
+
+.inputs-radio > label {
+  width: 2.8125em;
+  height: 2.8125em;
+  background-color: hsl(var(--medium-gray), 20%);
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  border-radius: 50%;
+  color: hsl(var(--light-gray));
+}
+
+.inputs-radio > label:hover {
+  cursor: pointer;
+  background-color: hsl(var(--orange));
+  color: hsl(var(--white));
+}
+
+.inputs-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+}
+
+#rating-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+button.submit-btn {
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: hsl(var(--white));
+  background-color: hsl(var(--orange));
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem;
+}
+
+button.submit-btn:hover {
+  color: hsl(var(--orange));
+  background-color: hsl(var(--white));
+  cursor: pointer;
+}
+
+#post-submit-section {
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+.thank-you-img {
+  width: 150px;
+}
+
+.user-selection {
+  color: hsl(var(--orange));
+  background-color: hsla(var(--medium-gray), 20%);
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+}

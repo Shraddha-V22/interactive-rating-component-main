@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/app.js" defer></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main class="main">
+      <section id="pre-submit-section" class="cards">
+        <img src="./images/icon-star.svg" alt="A star" class="star-img" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form id="rating-form">
+          <section class="inputs-radio">
+            <input
+              type="radio"
+              name="rate"
+              class="input-rating"
+              id="input-1"
+              value="1"
+            />
+            <label for="input-1">1</label>
+
+            <input
+              type="radio"
+              name="rate"
+              class="input-rating"
+              id="input-2"
+              value="2"
+            />
+            <label for="input-2">2</label>
+
+            <input
+              type="radio"
+              name="rate"
+              class="input-rating"
+              id="input-3"
+              value="3"
+            />
+            <label for="input-3">3</label>
+
+            <input
+              type="radio"
+              name="rate"
+              class="input-rating"
+              id="input-4"
+              value="4"
+            />
+            <label for="input-4">4</label>
+
+            <input
+              type="radio"
+              name="rate"
+              class="input-rating"
+              id="input-5"
+              value="5"
+            />
+            <label for="input-5">5</label>
+          </section>
+          <button class="submit-btn">Submit</button>
+        </form>
+      </section>
+      <section id="post-submit-section" class="cards">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="Thank you image"
+          class="thank-you-img"
+        />
+        <p class="user-selection">you selected</p>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
